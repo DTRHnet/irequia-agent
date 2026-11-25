@@ -16,7 +16,7 @@ const agent = new AgentClient('wss://irequia.dtrh.net/ws', {
 await agent.connect();
 const welcome = agent.welcome;
 console.log(welcome.visitor.line);
-console.log('Frontier:', welcome.frontier.map((f) => f.label).join(' · '));
+console.log('Frontier:', welcome.frontier.join(' · '));
 await agent.say('lobby', 'hello from the node example');
 agent.signGuestbook(`${name} was here (node example)`);
 await new Promise((r) => setTimeout(r, 500));
