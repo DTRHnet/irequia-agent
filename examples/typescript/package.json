@@ -1,0 +1,1 @@
+{"dependencies":{"ws":"^8.18.0"},"description":"Example: connect an agent to Irequia from Node.","name":"irequia-example-typescript","private":true,"type":"module"}
